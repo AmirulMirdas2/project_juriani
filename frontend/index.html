@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Drug Interaction Checker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>💊 Drug Interaction Checker</h1>
+            <p class="subtitle">
+                Cek interaksi antar obat secara cepat & akurat
+            </p>
+
+            <div class="card">
+                <!-- DRUG -->
+                <label>Nama Obat</label>
+                <input
+                    list="drugOptions"
+                    id="drugInput"
+                    placeholder="Ketik atau pilih obat"
+                />
+                <datalist id="drugOptions"></datalist>
+
+                <!-- INTERACT -->
+                <label>Interact Dengan</label>
+                <input
+                    list="interactOptions"
+                    id="interactInput"
+                    placeholder="Ketik atau pilih interact"
+                />
+                <datalist id="interactOptions"></datalist>
+
+                <button onclick="checkInteraction()">🔍 Cek Interaksi</button>
+            </div>
+
+            <div id="result" class="result-box"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
